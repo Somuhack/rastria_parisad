@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from './assets/header'
-import Footer from './assets/footer'
+import Header from './assets/Header'
+import Footer from './assets/Footer'
 
 const App = () => {
   return (
