@@ -10,7 +10,7 @@ const Header = () => {
       <div className="top-bar ">
         <div className="top-left">
           <span>📧info@icceindia.co.in</span>
-          <span>📞+91 8617257007</span>
+          <span>📞+91 7319554070</span>
         </div>
         <div className="top-right">
           <span>Co-Ordination Login</span>
