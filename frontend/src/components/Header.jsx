@@ -14,7 +14,7 @@ const Header = () => {
                 text-[9px] md:text-[10px] lg:text-[15px]
                 transition-[padding,font-size] duration-300 ease-in-out text-amber-50"
       >
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-1 md:gap-4 xl:gap-4">
           <span className="flex items-center gap-1">
             <CiMail /> info@icceindia.co.in
           </span>
