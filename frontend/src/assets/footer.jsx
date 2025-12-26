@@ -1,5 +1,5 @@
 import React from "react";
-import "./Footer.css";
+import "../assets/css/Footer.css";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {

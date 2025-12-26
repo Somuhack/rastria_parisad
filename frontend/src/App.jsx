@@ -1,13 +1,12 @@
 import React from 'react'
-import Header from './assets/Header'
-import Footer from './assets/footer'
+import Home from './pages/Home'
 
 const App = () => {
   return (
     <div>
-    < Header/>
-    <Footer/>
+      <Home/>
     </div>
   )
 }
+
 export default App
