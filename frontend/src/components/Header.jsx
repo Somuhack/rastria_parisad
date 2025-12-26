@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <>
       <div
-        className="min-w-full bg-green-800 px-10 md:px-30 lg:px-50 flex justify-between 
+        className="min-w-full bg-green-800 py-2 px-0 md:px-30 lg:px-50 flex justify-between 
                 text-[9px] md:text-[10px] lg:text-[15px]
                 transition-[padding,font-size] duration-300 ease-in-out text-amber-50"
       >
@@ -39,9 +39,10 @@ const Header = () => {
           <div>
             <FaWhatsapp />
           </div>
-          <button className="btn bg-amber-700 text-white border-0 h-7">
-            Login
-          </button>
+ <button className="btn bg-amber-700 text-white border-0 h-7 shadow-md shadow-black/30 hover:shadow-lg">
+  Login
+</button>
+
         </div>
       </div>
       <div className="w-full text-center">
