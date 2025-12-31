@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FiMenu, FiX, FiChevronDown } from "react-icons/fi";
 
+
 const NAV_ITEMS = [
   {
     label: "HOME",
@@ -31,13 +32,13 @@ const NAV_ITEMS = [
   },
   {
     label: "CONTACT US",
-    path: "/contact",
+    path: "/",
   },
   {
     label: "CONTACT US",
     path: "/contact",
   },
-  
+ 
 ];
 
 export default function Navbar() {
