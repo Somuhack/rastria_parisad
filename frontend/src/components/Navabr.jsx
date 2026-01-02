@@ -39,7 +39,7 @@ const NAV_ITEMS = [
     path: "/contact",
   },
   {
-    label: "About",
+    label: "ABOUT",
     path: "/about",
   },
  
