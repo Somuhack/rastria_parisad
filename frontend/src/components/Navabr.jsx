@@ -38,6 +38,10 @@ const NAV_ITEMS = [
     label: "CONTACT US",
     path: "/contact",
   },
+  {
+    label: "About",
+    path: "/about",
+  },
  
 ];
 
