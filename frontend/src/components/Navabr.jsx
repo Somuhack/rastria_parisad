@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FiMenu, FiX, FiChevronDown } from "react-icons/fi";
-
+import { routes } from "../routes/routes";
 
 const NAV_ITEMS = [
   {
@@ -66,9 +66,9 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-5 text-[.7rem]">
-          {NAV_ITEMS.map((item) => (
+          {routes.map((item,index) => (
             <div
-              key={item.label}
+              key={index}
               className="relative"
               onMouseEnter={() => setActiveDropdown(item.key)}
               onMouseLeave={() => setActiveDropdown(null)}

@@ -1,4 +1,5 @@
 import React from 'react';
+import Main from '../../Layout/Main';
 
 const RecognitionPage = () => {
   const categories = [
@@ -9,6 +10,7 @@ const RecognitionPage = () => {
   ];
 
   return (
+    <Main>
     <div className="min-h-screen bg-white p-4 md:p-8 font-sans">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-8">
         
@@ -81,6 +83,7 @@ const RecognitionPage = () => {
 
       </div>
     </div>
+    </Main>
   );
 };
 

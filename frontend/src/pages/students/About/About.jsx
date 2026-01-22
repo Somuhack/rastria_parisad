@@ -1,4 +1,5 @@
 import React from 'react';
+import Main from '../../../Layout/Main';
 
 const AboutICCE = () => {
   const categories = [
@@ -9,6 +10,7 @@ const AboutICCE = () => {
   ];
 
   return (
+    <Main>
     <div className="max-w-6xl mx-auto p-4 font-sans text-gray-800">
       {/* Header Section */}
       <header className="mb-8">
@@ -71,6 +73,7 @@ const AboutICCE = () => {
         </aside>
       </div>
     </div>
+    </Main>
   );
 };
 

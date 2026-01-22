@@ -1,5 +1,6 @@
 import React from "react";
 import "./CertificateVerification.css";
+import Main from "../../Layout/Main";
 
 const categories = [
   "Computer Course",
@@ -18,6 +19,7 @@ const categories = [
 
 const CertificateVerification = () => {
   return (
+    <Main>
     <div className="page">
       {/* Sidebar */}
       <aside className="sidebar">
@@ -45,6 +47,7 @@ const CertificateVerification = () => {
         <button className="submit-btn3">SUBMIT</button>
       </main>
     </div>
+    </Main>
   );
 };
 

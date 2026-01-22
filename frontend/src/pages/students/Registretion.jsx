@@ -1,9 +1,10 @@
 import React from "react";
 import "./AdmissionForm.css";
+import Main from "../../Layout/Main";
 
 const AdmissionForm = () => {
   return (
-    
+    <Main>
     <div className="page">
       {/* Sidebar */}
       <aside className="sidebar">
@@ -119,7 +120,7 @@ const AdmissionForm = () => {
         </form>
       </main>
     </div>
-    
+    </Main>
   );
 };
 
