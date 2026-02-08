@@ -34,8 +34,8 @@ export default function Footer() {
             <FiMail className="mx-auto text-3xl text-indigo-500 mb-3" />
             <h4 className="font-semibold text-lg">Email</h4>
             <p className="text-sm mt-2">
-              info@icceindia.co.in <br />
-              info@icceindia.co.in
+              rpkk123@gmail.com <br />
+              rpkk123@gmail.com
             </p>
           </div>
         </div>

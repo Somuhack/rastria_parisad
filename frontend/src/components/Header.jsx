@@ -18,7 +18,7 @@ const Header = () => {
       >
         <div className="flex items-center gap-1 md:gap-4 xl:gap-4">
           <span className="flex items-center gap-1">
-            <CiMail /> info@icceindia.co.in
+            <CiMail /> rpkk123@gamil.com
           </span>
           <span className="flex items-center gap-1">
             <IoCall /> +91 7319554070

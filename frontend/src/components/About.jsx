@@ -38,11 +38,11 @@ const AboutSection = () => {
             </div>
             
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
-              About <span className="text-green-600">I.C.C.E.</span>
+              About <span className="text-green-600">R.P.K.K</span>
             </h2>
             
             <p className="text-lg text-gray-600 leading-relaxed">
-              Welcome to the official website of the <strong>Indian Council of Computer Education</strong>. 
+              Welcome to the official website of the <strong>Rastria Parisad Kala Kendra</strong>. 
               We are a premier unit of the <em>ESR Foundation</em> and a sister concern of the 
               National Council of Vocational Training and Development (NCVTD).
             </p>
