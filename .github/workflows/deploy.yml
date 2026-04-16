@@ -17,7 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Install & Build
-        working-directory: client
+        working-directory: frontend
         run: |
           npm install
           npm run build
