@@ -13,7 +13,7 @@ const NAV_ITEMS = [
     path: "/contact",
   },
   {
-    label: "ABOUT US",
+    label: "BOUT US",
     path: "/about",
     key: "about",
     children: [
