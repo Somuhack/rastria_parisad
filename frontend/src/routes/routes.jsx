@@ -6,7 +6,7 @@ import RecognitionPage from "../pages/Recongnition/Regongnition";
 
 export const routes = [
   {
-    label: "HOME",
+    label: "HOMEy",
     path: "/",
     element: MyHome,
   },

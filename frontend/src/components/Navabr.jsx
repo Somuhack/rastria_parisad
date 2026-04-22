@@ -42,6 +42,25 @@ const NAV_ITEMS = [
     label: "ABOUT",
     path: "/about",
   },
+   {
+    label: "Check Resistration",
+    path: "/about",
+
+  },
+   {
+    label: "Check Admit Card",
+    path: "/about",
+  },
+  
+{
+    label: "Galary",
+    path: "/about",
+  },
+   {
+    label: "Contect Us",
+    path: "/about",
+  },
+
  
 ];
 
