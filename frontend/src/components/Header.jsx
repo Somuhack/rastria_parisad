@@ -6,6 +6,7 @@ import { FaTwitter } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaUserShield } from "react-icons/fa6";
+import Topuponbanner from "/topuponbanner.jpg";
 const Header = () => {
   // abc
   return (
@@ -48,7 +49,7 @@ const Header = () => {
         </div>
       </div>
       <div className="w-full text-center">
-        <img src="topuponbanner.png" alt="Description" className="h-auto px-10 md:px-30 lg:px-50 transition-[padding,font-size] duration-300 ease-in-out"/>
+        <img src={Topuponbanner} alt="Description" className="h-auto px-10 md:px-30 lg:px-50 transition-[padding,font-size] duration-300 ease-in-out"/>
       </div>
 
     </>
