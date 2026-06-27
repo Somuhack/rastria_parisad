@@ -1,8 +1,12 @@
 import MyHome from "../pages/MyHome";
 import AdmissionForm from "../pages/students/Registretion";
 import CertificateVerification from "../pages/students/CertificateVerification";
-import AboutICCE from "../pages/students/About/About";
 import RecognitionPage from "../pages/Recongnition/Regongnition";
+import AboutRPKK from "../pages/About/AboutRPKK";
+import Chairmanmsg from "../pages/About/Chairmanmsg";
+import Linkage from "../pages/About/Linkage";
+import AboutLayout from "../pages/About/AboutLayout";
+import Course from "../pages/Course/Course";
 
 export const routes = [
   {
@@ -11,22 +15,50 @@ export const routes = [
     element: MyHome,
   },
   {
-    label: "ADDMISSION FORM",
-    path: "/addmission",
+    label: "ADMISSION FORM",
+    path: "/admission",
     element: AdmissionForm,
   },
   {
-    label: "CERTIFICATE VERFICATIONS",
+    label: "CERTIFICATE VERIFICATIONS",
     path: "/certificate-verifications",
     element: CertificateVerification,
   },
   {
+<<<<<<< HEAD
     label: "BOUT",
+=======
+    label: "ABOUT RPKK",
+>>>>>>> 062b217856e79b4538264c785fc8fda292008c4f
     path: "/about",
-    element: AboutICCE,
+    key: "about",
+    element: AboutLayout, // parent layout/page
+    children: [
+      {
+        label: "ABOUT RPKK",
+        path: "/about/rpkk", // ✅ relative path
+        element: AboutRPKK,
+      },
+      {
+        label: "CHAIRMAN MESSAGE",
+        path: "/about/chairman-message", // ✅ fixed spelling + no space
+        element: Chairmanmsg,
+      },
+      {
+        label: "LINKAGE",
+        path: "/about/linkage",
+        element: Linkage,
+      },
+    ],
   },
   {
-    path: "/RECONIZATION",
+    label: "COURSE",
+    path: "/courses", // ✅ fixed spelling + lowercase
+    element: Course,
+  },
+  {
+    label: "RECOGNITION",
+    path: "/recognition", // ✅ fixed spelling + lowercase
     element: RecognitionPage,
   },
 ];

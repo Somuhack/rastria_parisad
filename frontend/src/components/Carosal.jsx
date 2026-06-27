@@ -17,7 +17,7 @@ export default function AwardCarousel() {
     // description: "Awarded in Kolkata, West Bengal",
   },
   {
-    image: "carosal/c3.jpeg",
+    image: "caros al/c3.jpeg",
   },
   {
     image: "carosal/c4.jpeg",
