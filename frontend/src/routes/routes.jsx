@@ -21,7 +21,7 @@ export const routes = [
     element: CertificateVerification,
   },
   {
-    label: "ABOUT",
+    label: "BOUT",
     path: "/about",
     element: AboutICCE,
   },
