@@ -17,17 +17,9 @@ const courseSchema = new mongoose.Schema(
     },
 
     category: {
-      type: String,
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "CourseCategory",
       required: true,
-      enum: [
-        "Computer",
-        "Vocational",
-        "Technical",
-        "Paramedical",
-        "Distance",
-        "Regular",
-        "Nursing",
-      ],
     },
 
     duration: {
@@ -55,7 +47,7 @@ const courseSchema = new mongoose.Schema(
   },
   {
     timestamps: true,
-  }
+  },
 );
 
 export default mongoose.model("Course", courseSchema);
