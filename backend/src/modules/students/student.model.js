@@ -7,7 +7,10 @@ const studentSchema = new mongoose.Schema(
       unique: true,
       index: true,
     },
-
+    photo: {
+      type: String,
+      default: null,
+    },
     admissionNo: {
       type: String,
       unique: true,
@@ -16,6 +19,12 @@ const studentSchema = new mongoose.Schema(
     firstName: {
       type: String,
       required: true,
+      trim: true,
+    },
+    registrationNo: {
+      type: String,
+      unique: true,
+      index: true,
       trim: true,
     },
 
@@ -28,15 +37,19 @@ const studentSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    admissionNo: {
+      type: String,
+      required: true,
+    },
 
     motherName: {
       type: String,
       required: true,
     },
     admissionId: {
-  type: mongoose.Schema.Types.ObjectId,
-  ref: "Admission",
-},
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Admission",
+    },
 
     dob: Date,
 
@@ -78,7 +91,7 @@ const studentSchema = new mongoose.Schema(
   },
   {
     timestamps: true,
-  }
+  },
 );
 
 export default mongoose.model("Student", studentSchema);

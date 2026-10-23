@@ -58,3 +58,10 @@ export const updateCentreStatus = async (id, status) => {
     { new: true, runValidators: true }
   );
 };  
+export const updateCentreActiveStatus = async (id, isActive) => {
+  return await Centre.findByIdAndUpdate(
+    id,
+    { isActive },
+    { new: true, runValidators: true }
+  );
+};  

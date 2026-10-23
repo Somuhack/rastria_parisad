@@ -4,7 +4,24 @@ import Student from "./student.model.js";
  * Create Student Admission
  */
 export const createStudent = async (data) => {
-  const student = await Student.create(data);
+
+ const student = await Student.create({
+  studentId,
+  admissionNo,
+  registrationNo,
+
+  firstName: data.firstName,
+  lastName: data.lastName,
+  fatherName: data.fatherName,
+  motherName: data.motherName,
+  dob: data.dob,
+  gender: data.gender,
+  mobile: data.mobile,
+  address: data.address,
+
+  centre: data.centre,
+  course: data.course,
+});
   return student;
 };
 

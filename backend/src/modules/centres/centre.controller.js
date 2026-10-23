@@ -5,6 +5,7 @@ import {
   updateCentre,
   deleteCentre,
   updateCentreStatus,
+  updateCentreActiveStatus
 } from "./centre.service.js";
 
 /**
@@ -134,6 +135,32 @@ export const updateCentreStatusController = async (req, res) => {
     const centre = await updateCentreStatus(
       req.params.id,
       req.body.status
+    );
+
+    if (!centre) {
+      return res.status(404).json({
+        success: false,
+        message: "Centre not found",
+      });
+    }
+
+    res.json({
+      success: true,
+      message: "Centre status updated successfully",
+      data: centre,
+    });
+  } catch (err) {
+    res.status(500).json({
+      success: false,
+      message: err.message,
+    });
+  }
+};
+export const updateCentreActiveStatusController = async (req, res) => {
+  try {
+    const centre = await updateCentreActiveStatus(
+      req.params.id,
+      req.body.isActive
     );
 
     if (!centre) {

@@ -5,6 +5,7 @@ const admissionSchema = new mongoose.Schema(
     admissionNo: {
       type: String,
       unique: true,
+      index: true,
     },
 
     studentId: {
@@ -52,7 +53,7 @@ const admissionSchema = new mongoose.Schema(
   },
   {
     timestamps: true,
-  }
+  },
 );
 
 export default mongoose.model("Admission", admissionSchema);

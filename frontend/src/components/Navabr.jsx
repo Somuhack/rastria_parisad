@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { FiMenu, FiX, FiChevronDown } from "react-icons/fi";
 import { routes } from "../routes/routes";
 
-<<<<<<< HEAD
 const NAV_ITEMS = [
   {
     label: "HOME",
@@ -46,8 +45,6 @@ const NAV_ITEMS = [
  
 ];
 
-=======
->>>>>>> 062b217856e79b4538264c785fc8fda292008c4f
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);

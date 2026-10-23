@@ -25,11 +25,7 @@ export const routes = [
     element: CertificateVerification,
   },
   {
-<<<<<<< HEAD
-    label: "BOUT",
-=======
-    label: "ABOUT RPKK",
->>>>>>> 062b217856e79b4538264c785fc8fda292008c4f
+    label: "ABOUT",
     path: "/about",
     key: "about",
     element: AboutLayout, // parent layout/page

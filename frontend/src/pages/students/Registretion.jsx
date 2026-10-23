@@ -37,7 +37,7 @@ const AdmissionForm = () => {
         <form className="form">
           {/* Location */}
           <section>
-            <h4>Choose your location</h4>
+            <h4>Choose your location<span className="text-red-700">*</span></h4>
             <div className="grid-2">
               <select required>
                 <option>Select State</option>
@@ -50,7 +50,7 @@ const AdmissionForm = () => {
 
           {/* Course */}
           <section>
-            <h4>Choose your course</h4>
+            <h4>Choose your course<span className="text-red-700">*</span></h4>
             <div className="grid-2">
               <select required>
                 <option>Select Course Category</option>
@@ -63,7 +63,7 @@ const AdmissionForm = () => {
 
           {/* Personal Info */}
           <section>
-            <h4>Enter your information</h4>
+            <h4>Enter your information<span className="text-red-700">*</span></h4>
             <div className="grid-2">
               <input placeholder="Full Name" required />
               <input placeholder="Father's Name" required />

@@ -6,7 +6,8 @@ import {
   getCentreController,
   deleteCentreController,
   updateCentreStatusController,
-  updateCentreController
+  updateCentreController,
+  updateCentreActiveStatusController,
 } from "./centre.controller.js";
 
 const router = express.Router();
@@ -22,5 +23,6 @@ router.put("/:id", updateCentreController);
 router.delete("/:id", deleteCentreController);
 
 router.patch("/:id/status", updateCentreStatusController);
+router.patch("/:id/active-status", updateCentreActiveStatusController);
 
 export default router;
